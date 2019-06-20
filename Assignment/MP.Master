@@ -1,0 +1,119 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MP.Master.cs" Inherits="Assignment.Site2" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<style> 
+input[type=text] {
+  width: 800px;
+  height:35px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+
+</style>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            height: 80px;
+        }
+        .auto-style3 {
+            height: 26px;
+            text-align: right;
+            font-size: small;
+        }
+        .auto-style4 {
+            height: 600px;
+        }
+        .auto-style6 {
+            height: 106px;
+            width: 1475px;
+        }
+        .auto-style7 {
+            height: 106px;
+            width: 156px;
+        }
+        .auto-style9 {
+            height: 34px;
+        }
+        .auto-style15 {
+            height: 33px;
+            text-align: left;
+            }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table class="auto-style1">
+            <tr>
+                <td class="auto-style7" rowspan="2">
+                    <asp:Image ID="Image2" runat="server" Height="175px" ImageUrl="~/pic/logo.jpg" Width="221px" />
+                </td>
+                <td class="auto-style6" rowspan="2" style="background-color: #C0C0C0">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:DropDownList ID="ddlSearch" runat="server" BackColor="White" Height="35px" Width="140px">
+                        <asp:ListItem>ALL</asp:ListItem>
+                        <asp:ListItem>Whathots</asp:ListItem>
+                        <asp:ListItem>Trending</asp:ListItem>
+                        <asp:ListItem>Classic</asp:ListItem>
+                    </asp:DropDownList>
+                    <input type="text" name="search" placeholder="Search...">
+                    
+                </td>
+                <td class="auto-style2" style="background-color: #C0C0C0">
+                    <asp:Image ID="Image1" runat="server" Height="87px" ImageUrl="~/pic/b7c37c5a9e.jpg" Width="91px" />
+                    <br />
+                    Artist Name</td>
+            </tr>
+            <tr>
+                <td class="auto-style9" style="background-color: #C0C0C0">
+                    <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" Orientation="Horizontal">
+                    </asp:Menu>
+                    <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+                </td>
+            </tr>
+
+
+
+            <tr>
+                <td class="auto-style15" colspan="3" style="background-color: #C0C0C0">
+    <div class="w3-bar w3-border w3-light-grey w3-center">
+  <a href="Upload.aspx" style="width:25%" class="w3-bar-item w3-button w3-mobile w3-grey">Upload</a>
+  <a href="Activity.aspx" style="width:25%" class="w3-bar-item w3-button w3-mobile">Activity</a>
+    <a href="Profile.aspx" style="width:25%" class="w3-bar-item w3-button w3-mobile w3-grey">Profile</a>
+  <a href="Contact.aspx" style="width:25%" class="w3-bar-item w3-button w3-mobile">Contact Us</a>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style4" colspan="3" style="background-color: #C0C0C0">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style3" colspan="3" style="background-color: #808080"><strong>Copyright 2019</strong></td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
