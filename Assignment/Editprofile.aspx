@@ -86,11 +86,6 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style24">Shipping Address:</td>
-                    <td class="auto-style25">
-                        <textarea id="TextArea1" class="auto-style26" name="S1"></textarea></td>
-                </tr>
-                <tr>
                     <td class="auto-style22" colspan="2">
                         <asp:Button ID="btnSave" runat="server" Text="Save" Width="186px" />
                     </td>

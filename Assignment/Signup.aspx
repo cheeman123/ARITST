@@ -36,10 +36,6 @@
             width: 722px;
             text-align: right;
         }
-        .auto-style13 {
-            margin-left: 0px;
-            margin-right: 0px;
-        }
         .auto-style14 {
             height: 780px;
         }
@@ -51,7 +47,6 @@
         <table class="auto-style1">
             <tr>
                 <td class="auto-style2" colspan="2">
-                    <asp:Image ID="Image1" runat="server" Height="217px" ImageUrl="~/pic/logo.jpg" Width="318px" CssClass="auto-style13" />
                     <br />
                     <br />
                 </td>
@@ -84,6 +79,11 @@
                 <td class="auto-style12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Confirm Email :</td>
                 <td>
                     <asp:TextBox ID="txtConfirmEmail" runat="server" Width="190px" BorderWidth="1px"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style8" colspan="2">
+                    <asp:Button ID="Button1" runat="server" Text="Sign Up" OnClick="Button1_Click" />
                 </td>
             </tr>
             <tr>

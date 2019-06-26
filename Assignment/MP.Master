@@ -79,7 +79,8 @@ input[type=text] {
                 <td class="auto-style2" style="background-color: #C0C0C0">
                     <asp:Image ID="Image1" runat="server" Height="87px" ImageUrl="~/pic/b7c37c5a9e.jpg" Width="91px" />
                     <br />
-                    Artist Name</td>
+                    <asp:Label ID="ArtistName" runat="server" Text="Artist Name"></asp:Label>
+                </td>
             </tr>
             <tr>
                 <td class="auto-style9" style="background-color: #C0C0C0">
